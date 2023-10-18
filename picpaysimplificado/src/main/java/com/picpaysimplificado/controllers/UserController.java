@@ -28,4 +28,10 @@ public class UserController {
         List<User> users = this.userService.getAllUsers();
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
+
+    @GetMapping("/user/{id}")
+    public ResponseEntity<User> getUserById(@PathVariable Long id) throws Exception {
+        User user = userService.findUserById(id);
+        return ResponseEntity.ok().body(user);
+    }
 }

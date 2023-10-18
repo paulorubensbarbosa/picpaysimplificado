@@ -9,13 +9,14 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserService {
     @Autowired
     private UserRepository repository;
 
-    public void ValidateTransaction(User sender, BigDecimal amount) throws Exception {
+    public void validateTransaction(User sender, BigDecimal amount) throws Exception {
         if(sender.getUserType() == UserType.MERCHANT){
             throw new Exception("Usuário não autorizado para realizar transação");
         }
