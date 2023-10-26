@@ -11,8 +11,8 @@ No teste devemos, criar uma API que simula uma transação entre usuários, onde
 Além de Definir qual tipo de usuário pode fazer determinada transação e por fim tratar os erros para evitar mostrar ao usuário a pilha de erro do sistema.
 
 O código é bastante simples e existem muitos upgrades que farei futuramente como:
-Adicionar para um banco de dados relacional a fim de manter a persistencia dos dados (MySQL).
-Adicionar testes unitários.
-Tratar melhor os erros.
-Adicionar segurança usando o Spring Security com JWT para gerar Tokens e através desses definir o Tipo de usuário e modificar as permissões.
-dentre outras melhorias.
+<h2>Adicionar para um banco de dados relacional a fim de manter a persistencia dos dados (MySQL).
+<h2>Adicionar testes unitários.
+<h2>Tratar melhor os erros.
+<h2>Adicionar segurança usando o Spring Security com JWT para gerar Tokens e através desses definir o Tipo de usuário e modificar as permissões.
+<h2>dentre outras melhorias.
